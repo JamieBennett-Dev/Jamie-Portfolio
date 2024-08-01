@@ -297,7 +297,7 @@ section {
 }
 
 .service-info h4 {
-    font-weight: 4rem;
+    font-size: 4rem;
     margin: 2rem 0;
     font-weight: 800;
 }
@@ -337,6 +337,10 @@ section {
     border: 2px solid var(--main-color);
     margin: 1.5rem 0;
     resize: none;
+}
+
+#submit-btn {
+    cursor: pointer;
 }
 
 /* Footer section*/
