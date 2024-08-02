@@ -268,19 +268,20 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--main-color);
+    background-color: var(--second-color);
+    color: var(--text-color);
+    border: 5px solid var(--second-color);
     height: 600px;
     border-radius: 3rem;
     cursor: pointer;
-    border: 5px solid transparent;
     transition: 0.3s ease-in-out;
 }
 
 .service-box:hover {
-    background-color: var(--second-bg-color);
-    color: var(--main-color);
-    border: 5px solid var(--main-color);
     transform: scale(1.025);
+    box-shadow: 0 0 25px var(--second-color),
+                0 0 50px var(--second-color),
+                0 0 75px var(--second-color);
 }
 
 .service-info {
@@ -308,9 +309,70 @@ section {
     line-height: 1.7;
 }
 
+/* Projects section */
+.projects {
+    background-color: var(--second-bg-color);
+    color: #000;
+}
+
+.projects h2 {
+    color: var(--text-color);
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.projects-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);
+    height: 600px;
+    border-radius: 3rem;
+    cursor: pointer;
+    border: 5px solid transparent;
+    transition: 0.3s ease-in-out;
+}
+
+.projects-box:hover {
+    background-color: var(--second-bg-color);
+    color: var(--main-color);
+    border: 5px solid var(--main-color);
+    transform: scale(1.025);
+}
+
+.projects-info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+}
+
+.projects-info i {
+    font-size: 8rem;
+}
+
+.projects-info h4 {
+    font-size: 4rem;
+    margin: 2rem 0;
+    font-weight: 800;
+}
+
+.projects-info p {
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.7;
+}
+
 /* Contact section */
 .contact {
-    background-color: var(--second-bg-color);
+    background-color: var(--bg-color);
 }
 
 .contact h2 {
