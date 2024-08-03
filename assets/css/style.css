@@ -370,6 +370,29 @@ section {
     line-height: 1.7;
 }
 
+.projects-icons {
+    display: flex;
+    gap: 2.5rem; 
+    margin-top: 2.5rem; 
+    color: #000;
+}
+
+.projects-icons a {
+    color: inherit; 
+    text-decoration: none; 
+    transition: 0.3s ease;
+    background: transparent;
+}
+
+.projects-box:hover .projects-icons a {
+    color: var(--main-color); 
+}
+
+.projects-icons a:hover {
+    color: var(--text-color) !important;
+    transform: scale(1.1)translateY(-5px);
+}
+
 /* Contact section */
 .contact {
     background-color: var(--bg-color);
